@@ -17,7 +17,7 @@ jobs :
                 echo "Good"3
                 echo "Morning"
                 pwd
-            - name : Github Actions 자체 저장되어 있는 변수 사용해보기
+            - name : Github Actions 자체 저장되어 있는 변수 사용해보기2
               run : |
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_SHA
