@@ -14,10 +14,14 @@ jobs :
 
             - name : 여러 명령어 문장 작성하기
               run : |
-                echo "Good"
+                echo "Good"3
                 echo "Morning"
                 pwd
             - name : Github Actions 자체 저장되어 있는 변수 사용해보기
               run : |
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_SHA
+            - name : Github Actions Secret 변수 사용해보기
+              run : |
+                echo ${{ secrets.MY_NAME }}
+                echo ${{ secrets.MY_HOBBY }}
